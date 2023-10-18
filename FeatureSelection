@@ -21,3 +21,8 @@ print(relative_fetures)
 
 
 #after getting the corrolations, we need to check the corrolation of the individual features with each other, Namely independent variables needs to be uncorrelated with each other 
+#we can drop one if the corrolation is high 
+
+#example code:
+print(df[["X1","X2"]].corr()) 
+# keep the one that has the higest corr with the target valuable 
