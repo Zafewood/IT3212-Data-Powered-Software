@@ -18,3 +18,6 @@ cor_target = abs(cor["ACTUAL PRICE"]
 #Selecting highly correlated features
 relative_fetures = cor_target[cor_target>0.5]
 print(relative_fetures) 
+
+
+#after getting the corrolations, we need to check the corrolation of the individual features with each other, Namely independent variables needs to be uncorrelated with each other 
