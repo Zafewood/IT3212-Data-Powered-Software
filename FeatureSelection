@@ -1,0 +1,20 @@
+#Loading the dataset 
+x = ...... # fill in correct data file
+df = pd.DataFrame(x.data, columns = x.feature_names) 
+df["ACTUAL PRICE"] # fill in correct lable naam (target)
+X = df.drop("ACTUAL PRICE",1) # feature Matrix
+y = df[Actual Price"]
+df.head() #show head of data 
+
+# Using Pearson Correlation 
+plt.figure(figuresize=(12,10))
+cor = df.corr()
+sns.heatmap(cor, annot=True, cmap=plt.cm.Reds)
+plt.show()
+
+#Correlation with output variable 
+cor_target = abs(cor["ACTUAL PRICE"]
+
+#Selecting highly correlated features
+relative_fetures = cor_target[cor_target>0.5]
+print(relative_fetures) 
