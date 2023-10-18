@@ -1,9 +1,9 @@
 #Loading the dataset 
 x = ...... # fill in correct data file
 df = pd.DataFrame(x.data, columns = x.feature_names) 
-df["ACTUAL PRICE"] # fill in correct lable naam (target)
+df["ACTUAL PRICE"] = x.target# fill in correct lable naam (target)
 X = df.drop("ACTUAL PRICE",1) # feature Matrix
-y = df[Actual Price"]
+y = df[Actual Price"].   #Target Variable 
 df.head() #show head of data 
 
 # Using Pearson Correlation 
